@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 719946346602414323}
   - component: {fileID: 1349366245760029626}
   - component: {fileID: 4829809991925365822}
+
+  - component: {fileID: 4560252010045350798}
+
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -133,9 +136,38 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!114 &4560252010045350798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5017207337870633258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93be1de00fb49a34fb176f97a0f18850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  PlayerOrientation: {fileID: 2936896191645696908}
+  HorizontalInput: 0
+  VerticalInput: 0
+  playerHeight: 2
+  IsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  Grounded: 0
+  groundDrag: 5
+  jumpForce: 10
+  jumpCooldown: 0.25
+  InAirMultiplyer: 0.5
+  readyToJump: 0
+  isrunning: 0
+
 --- !u!1 &6458316590276251618
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +179,9 @@ GameObject:
   - component: {fileID: 6227298578676019183}
   - component: {fileID: 1251982637673967813}
   - component: {fileID: 6275809419650863729}
+
+  - component: {fileID: 8886849484757234342}
+
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -163,7 +198,9 @@ Transform:
   m_GameObject: {fileID: 6458316590276251618}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+
+  m_LocalPosition: {x: 0, y: 0.68, z: 0}
+
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -228,3 +265,23 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6458316590276251618}
   m_Enabled: 1
+
+--- !u!114 &8886849484757234342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458316590276251618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33e1bbca4907824193fcbe75d49b1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensX: 400
+  sensY: 400
+  playerOrientation: {fileID: 2936896191645696908}
+  cameraOrientation: {fileID: 6227298578676019183}
+  xRot: 0
+  yRot: 0
+

@@ -1911,6 +1911,7 @@ GameObject:
   - component: {fileID: 755173428}
   - component: {fileID: 755173427}
   - component: {fileID: 755173431}
+  - component: {fileID: 755173432}
   m_Layer: 0
   m_Name: Librarian
   m_TagString: Untagged
@@ -2029,6 +2030,19 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &755173432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755173426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4961221efb605a048b051555ce888248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 882381018946036807}
 --- !u!1 &776057092
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,13 +3847,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857170305}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.357, y: 0.446, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0.3}
   m_LocalScale: {x: 0.5, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 755173430}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1857170307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4524,6 +4538,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa3be46231cdff5428a5f456ff8d5d83, type: 3}
+--- !u!4 &882381018946036807 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2936896191645696908, guid: fa3be46231cdff5428a5f456ff8d5d83, type: 3}
+  m_PrefabInstance: {fileID: 882381018946036806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
